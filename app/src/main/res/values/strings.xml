@@ -8,6 +8,8 @@
     <string name="latitude">Latitude</string>
     <string name="longitude">Longitude</string>
     <string name="altitude">Altitude</string>
+    <string name="favoriteStation">Station favorite :</string>
+    <string name="expand">></string>
 
     <string name="dateReleve">Date du relevé</string>
     <string name="temperatureOne">Température 1</string>

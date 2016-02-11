@@ -10,7 +10,8 @@
     android:nestedScrollingEnabled="false"
     android:transitionGroup="false"
     android:id="@+id/jeSaisPas"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/background">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,11 +21,13 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/linearStation">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:textColor="#ffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="titreStation"
                 android:id="@+id/titreStation" />
@@ -39,25 +42,26 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="33dp"
-                android:weightSum="1"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="600dp"
                     android:layout_height="match_parent"
+                    android:textColor="#ffffff"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="@string/libelle"
                     android:id="@+id/libelleStation"
-                    android:layout_weight="0.12" />
+                    android:layout_weight="1" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="600dp"
                     android:layout_height="match_parent"
+                    android:textColor="#ffffff"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="textLibelleStation"
+                    android:text="libelleStation"
                     android:id="@+id/textLibelleStation"
-                    android:phoneNumber="true" />
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
@@ -68,109 +72,130 @@
                 android:gravity="center_horizontal">
 
                 <TextView
-                    android:layout_width="166dp"
-                    android:layout_height="32dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/latitude"
-                    android:id="@+id/detailLongitudeStation" />
-
-                <TextView
-                    android:layout_width="182dp"
-                    android:layout_height="35dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="textLatitudeStation"
-                    android:id="@+id/textLatitudeStation" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="35dp"
-                android:gravity="center_horizontal">
-
-                <TextView
-                    android:layout_width="166dp"
+                    android:layout_width="600dp"
                     android:layout_height="match_parent"
+                    android:textColor="#ffffff"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="@string/longitude"
-                    android:id="@+id/detailLongitudeStation" />
+                    android:id="@+id/LongitudeStation"
+                    android:layout_weight="1" />
 
                 <TextView
-                    android:layout_width="182dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="600dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="textLongitudeStation"
-                    android:id="@+id/textLongitudeStation" />
+                    android:id="@+id/textLongitudeStation"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="35dp"
-                android:gravity="center_horizontal">
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
 
                 <TextView
-                    android:layout_width="166dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:textColor="#ffffff"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/altitude"
-                    android:id="@+id/textView"
-                    android:gravity="center_horizontal" />
+                    android:text="@string/latitude"
+                    android:id="@+id/LatitudeStation"
+                    android:layout_weight="1" />
 
                 <TextView
-                    android:layout_width="166dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="textAltitudeStation"
-                    android:id="@+id/textAltitudeStation"
-                    android:gravity="center_horizontal" />
+                    android:text="textLatitudeStation"
+                    android:id="@+id/textLatitudeStation"
+                    android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Vers les derniers releves"
-            android:id="@+id/button"
-            android:onClick="goToReleve" />
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vers la liste des stations"
-            android:id="@+id/button2"
-            android:onClick="goToList" />
+            <TextView
+                android:layout_width="600dp"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/altitude"
+                android:id="@+id/AltitudeStation"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="600dp"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="textAltitudeStation"
+                android:id="@+id/textAltitudeStation"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="138dp"
+            android:padding="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="1dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="1dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vers la liste des stations"
+                android:id="@+id/button2"
+                android:onClick="goToList"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vers les derniers releves"
+                android:id="@+id/button"
+                android:onClick="goToReleve"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="472dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/favoriteStation"
+                android:id="@+id/favorite" />
+
+            <TextView
+                android:layout_width="707dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="textFavoriteStation"
+                android:id="@+id/favoriteStation" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/displayListButton"
-            android:id="@+id/buttonStationList"
-            android:layout_gravity="center_horizontal"
-            android:onClick="goToList"
-            android:longClickable="false" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Station favorite :"
-        android:id="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/favoriteStation" />
 
 </LinearLayout>

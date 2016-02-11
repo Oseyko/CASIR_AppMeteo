@@ -1,5 +1,6 @@
 package com.example.sylvain.applicationmeteo;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -85,4 +86,5 @@ public class releve2Activity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

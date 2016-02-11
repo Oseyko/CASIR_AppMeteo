@@ -59,6 +59,9 @@ public class listActivityAdapter implements ListAdapter {
 
         TextView textViewStation = (TextView) convertView.findViewById(R.id.idStation);
         Button buttonFavorite = (Button) convertView.findViewById(R.id.buttonAddFavorite);
+        Button buttonDetail = (Button) convertView.findViewById(R.id.expandButton);
+
+        buttonDetail.setTag(runningStation.getIdStation());
         textViewStation.setText(runningStation.getLibelleStation());
         textViewStation.setTag(runningStation.getIdStation());
         buttonFavorite.setTag(runningStation.getIdStation());
